@@ -160,7 +160,9 @@
     i.e. you do not need to refresh the page manually.
 
     NOTE: 
-        webpack takes code from the src directory and perform required operations
-        like bundling of code, conversion of ES6 syntax and JSX syntax 
-        into common javascript etc. and host the public directory 
-        so that we can view our app in the browser (the index.html).
+        * webpack takes code from the src directory and perform required operations
+            * like bundling of code, 
+            * conversion of ES6 syntax and 
+            * JSX syntax 
+        * into common javascript etc. and host the public directory 
+        * so that we can view our app in the browser (the index.html).
