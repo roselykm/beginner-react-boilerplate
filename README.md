@@ -285,3 +285,7 @@
         npm start
         ```
 
+    - **output**
+
+    ![screenshot](doc/images/react-output.png)
+
