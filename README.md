@@ -60,8 +60,8 @@
     </html>
     ```
 
-7) Install babel to allow ES6 on older browser and to compile JSX (Javascript XML)
-   into vanilla javascript
+7) Install babel (in terminal) to allow ES6 on older browser and to compile JSX
+   (Javascript XML) into vanilla javascript
 
     ```
     npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/preset-react
@@ -81,3 +81,19 @@
 
     @babel/preset-react is preset which deals with JSX and converts it into vanilla
     javascript.
+
+8) Now, create a file ".babelrc" in the root directory. This file will tell babel
+   transpiler what presets and plugins to use to transpile the code. 
+   Add the following JSON code:
+
+    ```
+    {
+        "presets": ["@babel/preset-env","@babel/preset-react"]
+    }
+    ```
+
+9) Install React and React DOM by running the following command on the terminal:
+
+    ```
+    npm i react react-dom
+    ```
