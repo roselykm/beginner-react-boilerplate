@@ -183,3 +183,50 @@
 
     babel-loader is a package that allows the transpiling of javascript files 
     using babel and webpack.
+
+14) Create a webpack.config.js file in the root directory that helps us 
+    to define what exactly the webpack should do with our source code. 
+    We will specify the entry point from where the webpack should start bundling,
+    the output point that is where it should output the bundles and assets, 
+    plugins, etc.
+
+    webpack.config.js
+
+    ```
+    const path = require("path");
+
+    module.exports = {
+
+        // Entry point that indicates where
+        // should the webpack starts bundling
+        entry: "./src/index.js",
+        mode: "development",
+        module: {
+            rules: [
+                {
+                    test: /\.(js|jsx)$/, // checks for .js or .jsx files
+                    exclude: /(node_modules)/,
+                    loader: "babel-loader",
+                    options: { presets: ["@babel/env"] },
+                },
+                {
+                    test: /\.css$/, //checks for .css files
+                    use: ["style-loader", "css-loader"],
+                },
+            ],
+        },
+
+        // Options for resolving module requests
+        // extensions that are used
+        resolve: { extensions: ["*", ".js", ".jsx"] },
+
+        // Output point is where webpack should
+        // output the bundles and assets
+        output: {
+            path: path.resolve(__dirname, "dist/"),
+            publicPath: "/dist/",
+            filename: "bundle.js",
+        },
+    };
+   
+    ```
