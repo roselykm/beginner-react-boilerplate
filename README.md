@@ -97,3 +97,7 @@
     ```
     npm i react react-dom
     ```
+
+10) Create three files inside "src" folder:
+    
+    "App.js", "index.js", "App.css"
