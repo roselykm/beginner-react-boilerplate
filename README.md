@@ -101,3 +101,46 @@
 10) Create three files inside "src" folder:
     
     "App.js", "index.js", "App.css"
+
+11) Add the following code:
+
+    in App.js (A component of React)
+
+    ```
+    //note the ES6 arrow function and export default
+
+    import React from "react";
+    import "./App.css";
+    const App = () => {
+        return (
+            <div>
+                <h1 className="heading">GeeksForGeeks</h1>
+                <h4 className="sub-heading">
+                    A computer science portal for geeks
+                </h4>
+            </div>
+        );
+    };
+
+    export default App;   
+    ```
+
+    in App.css (Provides stylings for App component)
+
+    ```
+    /* stylings for App component */
+    .heading,.sub-heading{
+        color:green;
+        text-align: center;
+    }    
+    ```
+
+    in index.js 
+        (Renders the components on the browser inside index.html - DOM "root")
+
+    ```
+    import React from "react";
+    import ReactDOM  from "react-dom";
+    import App from "./App";
+    ReactDOM.render(<App/>,document.getElementById("root"));    
+    ```
