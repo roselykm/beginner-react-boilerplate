@@ -33,6 +33,7 @@
 6) Inside the public folder, make a file named index.html. 
    Copy the following html code into index.html
 
+    ```
     <!DOCTYPE html>
     <html lang="en">
         <head>
@@ -53,3 +54,4 @@
             <script src="../dist/bundle.js"></script>
         </body>
     </html>
+    ```
