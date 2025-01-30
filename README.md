@@ -269,7 +269,7 @@
     npm run build
     ```
 
-16) To create your project using this boilerplate:
+16) To create your own react project using this boilerplate, you need to:
 
     - download the zip
 
@@ -278,7 +278,7 @@
     - rename the folder (beginner-react-boilerplate-main) to your own project name
 
     - go into your project folder
-    
+
     - **Execute**:
         ```
         npm install
