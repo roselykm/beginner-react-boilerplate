@@ -166,3 +166,20 @@
             * JSX syntax 
         * into common javascript etc. and host the public directory 
         * so that we can view our app in the browser (the index.html).
+
+13) Webpack can understand JavaScript and JSON files only. So, to use webpack
+    functionality in other files like .css, babel files, etc., we have to install
+    some loaders in the project by writing the following command on the terminal:
+
+    ```
+    npm i --save-dev style-loader css-loader babel-loader
+    ```
+
+    css-loader collects CSS from all the CSS files in the app and bundle it 
+    into one file
+
+    style-loader puts all stylings inside <style> tag in index.html file present 
+    in the public folder
+
+    babel-loader is a package that allows the transpiling of javascript files 
+    using babel and webpack.
