@@ -26,7 +26,7 @@
     git add .gitignore && git commit -m "Add .gitignore with node_modules"
     ```
 
-   or you the git utilities in VSCode to commit
+   or use the git utilities in VSCode to commit
 
 5) Make two directories named "public" and "src" inside the project directory
     - "public" folder contains all static assets like images, svgs, etc
@@ -144,3 +144,17 @@
     import App from "./App";
     ReactDOM.render(<App/>,document.getElementById("root"));    
     ```
+
+12) Install webpack a local development server for the project with live reloading
+
+    ```
+    npm install --save-dev webpack webpack-cli webpack-dev-server
+    ```
+
+    webpack is a modular bundler
+
+    webpack-cli allows us to use webpack from the terminal by running 
+    a set of commands,
+
+    webpack-dev-server provides a development server with live reloading
+    i.e. you do not need to refresh the page manually.
