@@ -23,3 +23,7 @@
    git add .gitignore && git commit -m "Add .gitignore with node_modules"
 
    or you the git utilities in VSCode to commit
+
+5) Make two directories named "public" and "src" inside the project directory
+    - "public" folder contains all static assets like images, svgs, etc
+    - "src" folder contains the whole source code
