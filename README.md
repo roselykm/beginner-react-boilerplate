@@ -269,3 +269,19 @@
     npm run build
     ```
 
+16) To create your project using this boilerplate:
+
+    - download the zip
+
+    - extract to your development folder
+
+    - rename the folder (beginner-react-boilerplate-main) to your own project name
+
+    - go into your project folder
+    
+    - **Execute**:
+        ```
+        npm install
+        npm start
+        ```
+
