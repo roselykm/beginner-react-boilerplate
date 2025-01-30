@@ -1,8 +1,8 @@
 1) Create new project folder and rename as you like, for example react-app
 
-2) Check your node version (node -v) and update if necessary to the latest version
+2) Check your **node version (node -v)** and update if necessary to the latest version
 
-3) Open terminal or command prompt, go to your react app folder, and run this
+3) Open terminal or command prompt, go to your **react app folder**, and run this
    command:
 
     ```
@@ -15,10 +15,10 @@
     - type: code . to open the project folder in VSCode, you can check out the 
     package.json file
 
-4) In VSCode, create .gitignore file to ignore node_modules when commiting to github.
+4) In **VSCode**, create **.gitignore** file to ignore node_modules when commiting to github.
    Open .gitignore file and add the following line then save:
    
-   node_modules/
+   **node_modules/**
 
    Commit your .gitignore file to your repository:
 
@@ -29,12 +29,12 @@
    or use the git utilities in VSCode to commit
 
 5) Make two directories named "public" and "src" inside the project directory
-    - "public" folder contains all static assets like images, svgs, etc
+    - **"public"** folder contains all static assets like images, svgs, etc
       and an index.html file where the react will render our app
 
-    - "src" folder contains the whole source code
+    - **"src"** folder contains the whole source code
 
-6) Inside the public folder, make a file named index.html. 
+6) Inside the public folder, make a file named **index.html**. 
    Copy the following html code into index.html
 
     ```
@@ -60,8 +60,8 @@
     </html>
     ```
 
-7) Install babel (in terminal) to allow ES6 on older browser and to compile JSX
-   (Javascript XML) into vanilla javascript
+7) Install **babel** (in terminal) to allow ES6 on older browser and to compile **JSX
+   (Javascript XML)** into **vanilla javascript**
 
     ```
     npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/preset-react
@@ -69,20 +69,20 @@
 
     Here:
 
-    –save-dev means save all above installed modules in devDependencies in package.
+    **–save-dev** means save all above installed modules in devDependencies in package.
      json file,
 
-    @babel/core is a module that contains the main functionality of Babel,
+    **@babel/core** is a module that contains the main functionality of Babel,
 
-    @babel/cli is a module that allows us to use babel from the terminal,
+    **@babel/cli** is a module that allows us to use babel from the terminal,
 
-    @babel/preset-env is preset that handles the transformation of ES6 syntax into
+    **@babel/preset-env** is preset that handles the transformation of ES6 syntax into
     common javascript,
 
-    @babel/preset-react is preset which deals with JSX and converts it into vanilla
+    **@babel/preset-react** is preset which deals with JSX and converts it into vanilla
     javascript.
 
-8) Now, create a file ".babelrc" in the root directory. This file will tell babel
+8) Now, create a file **".babelrc"** in the root directory. This file will tell babel
    transpiler what presets and plugins to use to transpile the code. 
    Add the following JSON code:
 
@@ -92,7 +92,7 @@
     }
     ```
 
-9) Install React and React DOM by running the following command on the terminal:
+9) Install **React** and **React DOM** by running the following command on the terminal:
 
     ```
     npm i react react-dom
@@ -100,11 +100,11 @@
 
 10) Create three files inside "src" folder:
     
-    "App.js", "index.js", "App.css"
+    **"App.js", "index.js", "App.css"**
 
 11) Add the following code:
 
-    in App.js (A component of React)
+    in **App.js** (A component of React - you can create any number of react component)
 
     ```
     //note the ES6 arrow function and export default
@@ -125,7 +125,7 @@
     export default App;   
     ```
 
-    in App.css (Provides stylings for App component)
+    in **App.css** (Provides stylings for App component)
 
     ```
     /* stylings for App component */
@@ -135,7 +135,7 @@
     }    
     ```
 
-    in index.js 
+    in **index.js** 
         (Renders the components on the browser inside index.html - DOM "root")
 
     ```
@@ -148,18 +148,18 @@
     root.render(<App />);    
     ```
 
-12) Install webpack a local development server for the project with live reloading
+12) Install **webpack** a local development server for the project with live reloading
 
     ```
     npm install --save-dev webpack webpack-cli webpack-dev-server
     ```
 
-    webpack is a modular bundler
+    **webpack** is a modular bundler
 
-    webpack-cli allows us to use webpack from the terminal by running 
+    **webpack-cli** allows us to use webpack from the terminal by running 
     a set of commands,
 
-    webpack-dev-server provides a development server with live reloading
+    **webpack-dev-server** provides a development server with live reloading
     i.e. you do not need to refresh the page manually.
 
     NOTE: 
@@ -179,22 +179,22 @@
     npm i -D babel-loader
     ```
 
-    css-loader collects CSS from all the CSS files in the app and bundle it 
+    **css-loader** collects CSS from all the CSS files in the app and bundle it 
     into one file
 
-    style-loader puts all stylings inside <style> tag in index.html file present 
+    **style-loader** puts all stylings inside <style> tag in index.html file present 
     in the public folder
 
-    babel-loader is a package that allows the transpiling of javascript files 
+    **babel-loader** is a package that allows the transpiling of javascript files 
     using babel and webpack.
 
-14) Create a webpack.config.js file in the root directory that helps us 
+14) Create a **webpack.config.js** file in the root directory that helps us 
     to define what exactly the webpack should do with our source code. 
     We will specify the entry point from where the webpack should start bundling,
     the output point that is where it should output the bundles and assets, 
     plugins, etc.
 
-    webpack.config.js
+    **webpack.config.js**
 
     ```
     const path = require("path");
@@ -235,7 +235,7 @@
    
     ```
 
-15) Add some scripts in the package.json file to run and build the project.
+15) Add some scripts in the **package.json** file to run and build the project.
 
     ```
     "scripts": {
@@ -269,13 +269,13 @@
     npm run build
     ```
 
-16) To create your own react project using this boilerplate, you need to:
+16) To create your own react project using this **boilerplate**, you need to:
 
     - download the zip
 
     - extract to your development folder
 
-    - rename the folder (beginner-react-boilerplate-main) to your own project name
+    - rename the folder (**beginner-react-boilerplate-main**) to your own project name
 
     - go into your project folder
 
