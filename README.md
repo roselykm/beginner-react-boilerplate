@@ -271,13 +271,13 @@
 
 16) To create your own react project using this **boilerplate**, you need to:
 
-    - download the zip
+    - clone the project into your computer, by running this git command:
 
-    - extract to your development folder
+    ```
+    git clone https://github.com/roselykm/beginner-react-boilerplate.git your-react-project-name
+    ```
 
-    - rename the folder (**beginner-react-boilerplate-main**) to your own project name
-
-    - go into your project folder
+    - go into your your-react-project-name folder
 
     - **Execute**:
         ```
