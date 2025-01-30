@@ -69,8 +69,15 @@
 
     Here:
 
-    –save-dev means save all above installed modules in devDependencies in package.json file,
+    –save-dev means save all above installed modules in devDependencies in package.
+     json file,
+
     @babel/core is a module that contains the main functionality of Babel,
+
     @babel/cli is a module that allows us to use babel from the terminal,
-    @babel/preset-env is preset that handles the transformation of ES6 syntax into common javascript,
-    @babel/preset-react is preset which deals with JSX and converts it into vanilla javascript.
+
+    @babel/preset-env is preset that handles the transformation of ES6 syntax into
+    common javascript,
+
+    @babel/preset-react is preset which deals with JSX and converts it into vanilla
+    javascript.
