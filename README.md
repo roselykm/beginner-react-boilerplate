@@ -5,7 +5,9 @@
 3) Open terminal or command prompt, go to your react app folder, and run this
    command:
 
+    ```
     npm init -y
+    ```
 
     - this will create the project package.json, that will contain all the 
     dependencies when we run npm install later
@@ -20,7 +22,9 @@
 
    Commit your .gitignore file to your repository:
 
-   git add .gitignore && git commit -m "Add .gitignore with node_modules"
+    ```
+    git add .gitignore && git commit -m "Add .gitignore with node_modules"
+    ```
 
    or you the git utilities in VSCode to commit
 
@@ -54,4 +58,11 @@
             <script src="../dist/bundle.js"></script>
         </body>
     </html>
+    ```
+
+7) Install babel to allow ES6 on older browser and to compile JSX (Javascript XML)
+   into vanilla javascript
+
+    ```
+    npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/preset-react
     ```
