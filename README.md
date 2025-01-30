@@ -26,4 +26,30 @@
 
 5) Make two directories named "public" and "src" inside the project directory
     - "public" folder contains all static assets like images, svgs, etc
+      and an index.html file where the react will render our app
+
     - "src" folder contains the whole source code
+
+6) Inside the public folder, make a file named index.html. 
+   Copy the following html code into index.html
+
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content=
+                "width=device-width, initial-scale=1.0">
+            <title>Basic Boilerplate of React</title>
+        </head>
+        <body>
+
+            <!-- This is the div where React 
+                will render our app -->
+            <div id="root"></div>
+            <noscript>
+                Please enable javascript to view this site.
+            </noscript>
+            <script src="../dist/bundle.js"></script>
+        </body>
+    </html>
