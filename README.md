@@ -241,13 +241,14 @@
     }    
     ```
     **start** is to run the project
-        **–open** flag tells the webpack-dev-server to open the browser instantly 
-        after the server had been started.
 
-        **–hot** flag enables webpack’s Hot Module Replacement feature. 
-        It only updates what’s changed in the code, so does not update 
-        the whole code,
-        again and again, that’s why it saves precious development time
+    **–open** flag tells the webpack-dev-server to open the browser instantly 
+    after the server had been started.
+
+    **–hot** flag enables webpack’s Hot Module Replacement feature. 
+    It only updates what’s changed in the code, so does not update 
+    the whole code,
+    again and again, that’s why it saves precious development time
 
     **NPM command the run our project:**
 
