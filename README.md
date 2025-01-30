@@ -140,9 +140,12 @@
 
     ```
     import React from "react";
-    import ReactDOM  from "react-dom";
+    import { createRoot } from 'react-dom/client';
+
     import App from "./App";
-    ReactDOM.render(<App/>,document.getElementById("root"));    
+
+    const root = createRoot(document.getElementById('root'));
+    root.render(<App />);    
     ```
 
 12) Install webpack a local development server for the project with live reloading
@@ -173,6 +176,7 @@
 
     ```
     npm i --save-dev style-loader css-loader babel-loader
+    npm i -D babel-loader
     ```
 
     css-loader collects CSS from all the CSS files in the app and bundle it 
@@ -197,36 +201,36 @@
 
     module.exports = {
 
-        // Entry point that indicates where
-        // should the webpack starts bundling
-        entry: "./src/index.js",
-        mode: "development",
-        module: {
-            rules: [
-                {
-                    test: /\.(js|jsx)$/, // checks for .js or .jsx files
-                    exclude: /(node_modules)/,
-                    loader: "babel-loader",
-                    options: { presets: ["@babel/env"] },
-                },
-                {
-                    test: /\.css$/, //checks for .css files
-                    use: ["style-loader", "css-loader"],
-                },
-            ],
-        },
+    // Entry point that indicates where
+    // should the webpack starts bundling
+    entry: "./src/index.js",
+    mode: "development",
+    module: {
+        rules: [
+            {
+                test: /\.(js|jsx)$/, // checks for .js or .jsx files
+                exclude: /(node_modules)/,
+                loader: "babel-loader",
+                options: { presets: ["@babel/env"] },
+            },
+            {
+                test: /\.css$/, //checks for .css files
+                use: ["style-loader", "css-loader"],
+            },
+        ],
+    },
 
-        // Options for resolving module requests
-        // extensions that are used
-        resolve: { extensions: ["*", ".js", ".jsx"] },
+    // Options for resolving module requests
+    // extensions that are used
+    resolve: { extensions: ["*", ".js", ".jsx"] },
 
-        // Output point is where webpack should
-        // output the bundles and assets
-        output: {
-            path: path.resolve(__dirname, "dist/"),
-            publicPath: "/dist/",
-            filename: "bundle.js",
-        },
+    // Output point is where webpack should
+    // output the bundles and assets
+    output: {
+        path: path.resolve(__dirname, "dist/"),
+        publicPath: "/dist/",
+        filename: "bundle.js",
+    },
     };
    
     ```
