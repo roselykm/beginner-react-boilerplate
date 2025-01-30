@@ -250,7 +250,7 @@
     the whole code,
     again and again, that’s why it saves precious development time
 
-    **NPM command the run our project:**
+    **NPM command to run our project:**
 
     ```
     npm start
